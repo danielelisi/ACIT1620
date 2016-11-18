@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daniele Lisi's Portfolio - ACIT1620</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+<!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+        
+    
+    </head>
+    
+    
+    <body>
+        <div class="container-fluid text-center topbanner">       
+            <h2>Daniele Lisi's Portfolio</h2>
+            <img src="img/profile.jpg" class="img-thumbnail">
+        </div>
+        
+        
+        <div class="container-fluid text-center midbanner">
+            <h2>Portfolio Images</h2> 
+            <br>
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <h3>Sport</h3>
+                    <img src="img/snowboarding.jpg" class="img-responsive" style="width:100%">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <h3>Hobby</h3>
+                    <img src="img/photography.jpg" class="img-responsive" style="width:100%">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <h3>Music</h3>
+                    <img src="img/guitar.jpg" class="img-responsive" style="width:100%">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <h3>Food</h3>
+                    <img src="img/pizza.jpg" class="img-responsive" style="width:100%">
+                </div>
+            
+            </div>
+            
+        </div>
+        
+        <div class="container-fluid text-center biobanner">
+            <h2>BCIT CIT Set1A</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ligula ornare, pharetra dui quis, pellentesque mi. Nullam posuere, diam vitae fringilla bibendum, quam nisl sodales nisl, ut imperdiet arcu tortor non mauris. Proin id egestas est.</p>
+            <button id="deletesite" class="btn btn-default btn-lg" style="margin-top:50px;">Delete Me</button>
+        </div>
+        
+        <div class="container-fluid text-center bottombanner">
+            <h3>BCIT CIT Set1A</h3>
+        </div>
+        
+        
+        
+        <script>
+            
+            var deleteBut = document.getElementById("deletesite");
+            
+            deleteBut.onclick = function() {
+                
+                document.body.innerHTML = "";
+                var poop = document.createElement("img")
+                poop.src = "https://metrouk2.files.wordpress.com/2015/03/poop.jpg"
+                document.body.append(poop)
+            }
+            
+            
+        
+        
+        
+        
+        </script>
+    
+    </body>
+
+</html>
